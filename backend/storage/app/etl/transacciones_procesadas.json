@@ -1,0 +1,57 @@
+{
+    "generado_en": "2026-09-19T01:49:28+00:00",
+    "total_transacciones": 5,
+    "transacciones": [
+        {
+            "cuenta_id": "a2c5bcf1-182c-4878-844c-74bd8e509739",
+            "fecha": "2026-09-15",
+            "monto": 150.5,
+            "moneda": "USD",
+            "referencia": "COMPRA-001"
+        },
+        {
+            "cuenta_id": "a2c5bcf1-182c-4878-844c-74bd8e509739",
+            "fecha": "2026-09-16",
+            "monto": 89,
+            "moneda": "USD",
+            "referencia": "COMPRA-002"
+        },
+        {
+            "cuenta_id": "a2c5bcf1-6ba2-4947-888f-4ddd92a599af",
+            "fecha": "2026-09-15",
+            "monto": 1200,
+            "moneda": "USD",
+            "referencia": "COMPRA-004"
+        },
+        {
+            "cuenta_id": "a2c5bcf1-6ba2-4947-888f-4ddd92a599af",
+            "fecha": "2026-09-17",
+            "monto": 45,
+            "moneda": "USD",
+            "referencia": "COMPRA-005"
+        },
+        {
+            "cuenta_id": "a2c5bcf1-182c-4878-844c-74bd8e509739",
+            "fecha": "2026-09-18",
+            "monto": 320.75,
+            "moneda": "USD",
+            "referencia": "COMPRA-006"
+        }
+    ],
+    "features_por_cuenta": [
+        {
+            "cuenta_id": "a2c5bcf1-182c-4878-844c-74bd8e509739",
+            "total_transacciones": 3,
+            "monto_total": 560.25,
+            "monto_promedio": 186.75,
+            "ultima_transaccion": "2026-09-18"
+        },
+        {
+            "cuenta_id": "a2c5bcf1-6ba2-4947-888f-4ddd92a599af",
+            "total_transacciones": 2,
+            "monto_total": 1245,
+            "monto_promedio": 622.5,
+            "ultima_transaccion": "2026-09-17"
+        }
+    ]
+}
