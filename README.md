@@ -156,6 +156,6 @@ smartbancs-app/
 ├── backend/                   # Aplicación Laravel (API, modelos, jobs, comandos)
 ├── docker/php/Dockerfile      # Imagen PHP 8.4 + Swoole + extensiones necesarias
 ├── docker-compose.yml         # Orquestación de backend, worker, PostgreSQL y Redis
-├── declaracion_uso_inteligencia_artificial.md
-└── README.md
+├── README.md
+└── declaracion_uso_inteligencia_artificial.md
 ```
