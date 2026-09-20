@@ -111,6 +111,18 @@ class TransactionController extends Controller
 
             return response()->json($transaction, 201);
 
+        } catch (\Illuminate\Database\QueryException $e) {
+            if ($e->getCode() === '23505') {
+                Log::channel('transactions')->info('transaction.idempotent_race_resolved', [
+                    'correlation_id' => $correlationId,
+                    'idempotency_key' => $request->idempotency_key,
+                ]);
+
+                $ganadora = Transaction::where('idempotency_key', $request->idempotency_key)->first();
+
+                return response()->json($ganadora, 200);
+            }
+            throw $e;
         } catch (\RuntimeException $e) {
             if ($e->getMessage() === 'SALDO_INSUFICIENTE') {
 
