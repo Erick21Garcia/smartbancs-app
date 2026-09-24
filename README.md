@@ -80,9 +80,21 @@ Invoke-RestMethod -Uri "http://localhost:8000/api/transactions" -Method Post -Bo
 ```
 
 Consultar una transacción existente (con su recomendación de IA asociada):
+
+**Linux/macOS:**
 ```bash
 curl http://localhost:8000/api/transactions/<ID_DE_LA_TRANSACCION>
 ```
+
+**Windows (PowerShell):**
+```powershell
+Invoke-RestMethod -Uri "http://localhost:8000/api/transactions/<ID_DE_LA_TRANSACCION>"
+```
+
+> **Nota:** `Invoke-RestMethod` convierte la respuesta a objetos de PowerShell, pero su vista de tabla por defecto trunca los objetos anidados a partir del 2° nivel (por ejemplo, `ai_recommendation.payload` puede aparecer vacío aunque el dato exista). Para ver la respuesta completa sin truncar, usa:
+> ```powershell
+> Invoke-RestMethod -Uri "http://localhost:8000/api/transactions/<ID_DE_LA_TRANSACCION>" | ConvertTo-Json -Depth 5
+> ```
 
 ---
 
